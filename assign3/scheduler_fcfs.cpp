@@ -15,7 +15,10 @@
 
 
 //Constructor and Destructor
-SchedulerFCFS::SchedulerFCFS() {}
+SchedulerFCFS::SchedulerFCFS() {
+    this->wTime = 0;
+    this->tTime = 0;
+}
 SchedulerFCFS::~SchedulerFCFS() {}
 
 //Initialize the process list
