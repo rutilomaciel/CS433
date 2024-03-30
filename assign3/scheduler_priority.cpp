@@ -54,31 +54,16 @@ void SchedulerPriority::simulate() {
 }
 
 void SchedulerPriority::print_results() {
-//    for(const PCB& pcb : this->process_list){
-//        // Accumulate total turnaround time
-//        this->tTime += pcb.burst_time;
-//
-//        // Accumulate total waiting time
-//        this->wTime += pcb.arrival_time;
-//
-//        // Print turnaround time and waiting time for the process
-//        cout << pcb.name << " turn-around time = " << pcb.burst_time << ", waiting time " << pcb.arrival_time << endl;
-//    }
-//
-//    // Calculate and print average turn-around time and average waiting time
-//    double avg_turnaround_time = this->tTime / this->process_list.size();
-//    double avg_waiting_time = this->wTime / this->process_list.size();
-//    cout << "Average turn-around time = " << avg_turnaround_time << ", Average waiting time = " << avg_waiting_time << endl;
-//}
+
 
 // Sort the process_list by id
     std::sort(this->process_list.begin(), this->process_list.end(), compareId);
 
     for(const PCB& pcb : this->process_list){
-        // Accumulate total turnaround time
+        // Total turnaround time
         this->tTime += pcb.burst_time;
 
-        // Accumulate total waiting time
+        // Total waiting time
         this->wTime += pcb.arrival_time;
 
         // Print turnaround time and waiting time for the process
