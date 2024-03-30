@@ -25,7 +25,7 @@ void SchedulerFCFS::simulate() {
     unsigned int waitTime = 0;
 
     for(PCB& pcb : this->process_list) {
-        cout<<"Running Process "<< pcb.name <<" for "<<pcb.burst_time<<" time units | wait time:"<<waitTime<<endl;
+        cout<<"Running Process "<< pcb.name <<" for "<<pcb.burst_time<<" time units"<<endl;
         pcb.arrival_time = waitTime;
         waitTime += pcb.burst_time;
         pcb.burst_time = waitTime;

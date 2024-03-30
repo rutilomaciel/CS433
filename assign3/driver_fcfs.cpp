@@ -37,6 +37,9 @@ int main(int argc, char *argv[]) {
     string line;
     vector<PCB> process_list;
     int id = 0;
+
+//    which one you want me to do ?
+//i dont think im gonna make it to class tmrw
     while(getline(input_file, line)) {
         // Split the line into tokens
         istringstream ss(line);
