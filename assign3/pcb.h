@@ -62,4 +62,8 @@ public:
         cout << "Process " << id << ": " << name << " has priority " << priority << " and burst time "
              << burst_time << endl;
     }
+
+    bool operator==(const PCB& other) const {
+        return name == other.name;
+    }
 };
