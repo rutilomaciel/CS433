@@ -29,7 +29,14 @@ void SchedulerPriorityRR::init(std::vector<PCB>& process_list) {
 
 // Function to print simulation results
 void SchedulerPriorityRR::print_results() {
-    Scheduler::print_results();
+    for(PCB pcb : this->process_list){
+
+        this->tTime+= pcb.burst_time;
+        this->wTime += pcb.arrival_time;
+
+        cout<<pcb.name <<" turn-around time = "<< pcb.burst_time<< ", waiting time = "<< pcb.arrival_time <<endl;
+    }
+    cout<<"Average turn-around time = "<< this->tTime / this->process_list.size() << ", Average waiting time = "<< this->wTime / this->process_list.size() <<endl;
 }
 
 // Function to simulate the scheduling of processes
