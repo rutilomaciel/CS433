@@ -17,9 +17,9 @@
 class SchedulerPriority : public Scheduler {
 private:
     // TODO: add necessary member variables here for your implementation
-    std::vector<PCB> process_list;
-    double tTime;
-    double wTime;
+    std::vector<PCB> process_list; //List of processes
+    double tTime; //Turnaround time
+    double wTime; //Waiting time
 
 public:
     /**

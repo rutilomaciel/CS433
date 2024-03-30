@@ -18,9 +18,9 @@
 class SchedulerFCFS : public Scheduler {
 private:
     // TODO: add necessary member variables here for your implementation
-    vector<PCB> process_list;
-    double tTime;
-    double wTime;
+    vector<PCB> process_list; //List of processes
+    double tTime; //Turn-around time
+    double wTime; //Waiting time
 
 public:
     /**

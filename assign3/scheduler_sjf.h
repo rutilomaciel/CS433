@@ -16,9 +16,9 @@
 class SchedulerSJF : public Scheduler {
 private:
 
-    vector<PCB> process_list;
-    double tTime;
-    double wTime;
+    vector<PCB> process_list; //List of processes
+    double tTime; //Turn-around time
+    double wTime; //Waiting time
 
 public:
     /**
