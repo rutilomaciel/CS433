@@ -20,7 +20,6 @@ private:
     std::vector<PCB> process_list;
     double tTime;
     double wTime;
-    //static bool comparePriority(const PCB& pcb1, const PCB& pcb2);
 
 public:
     /**
