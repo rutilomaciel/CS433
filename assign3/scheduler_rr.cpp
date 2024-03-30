@@ -15,6 +15,8 @@
 //Constructor and Destructor
 SchedulerRR::SchedulerRR(int time_quantum){
     this->time_quantum = time_quantum; //Set time quantum for RR
+    this->tTime = 0;
+    this->wTime = 0;
 }
 
 SchedulerRR::~SchedulerRR() {}

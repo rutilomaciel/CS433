@@ -1,7 +1,7 @@
 /**
 * Assignment 3: CPU Scheduler
  * @file scheduler_priority_rr.h
- * @author ??? (TODO: your name)
+ * @author Rutilo Maciel and Alvaro Espinoza Merida
  * @brief This Scheduler class implements the Priority RR scheduling algorithm.
  * @version 0.1
  */
@@ -12,6 +12,8 @@
 #define ASSIGN3_SCHEDULER_PRIORITY_RR_H
 
 #include "scheduler.h"
+#include "scheduler_priority.h"
+#include "scheduler_rr.h"
 
 class SchedulerPriorityRR : public Scheduler {
 private:
@@ -20,7 +22,6 @@ private:
     vector<PCB> process_list;
     double tTime;
     double wTime;
-    static bool comparePriority(const PCB& pcb1, const PCB& pcb2);
 
 public:
     /**
