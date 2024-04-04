@@ -17,6 +17,8 @@
 SchedulerPriorityRR::SchedulerPriorityRR(int time_quantum){
     // Initialize any member variables specific to SchedulerPriorityRR if needed
     this->time_quantum = time_quantum;
+    this->tTime = 0;
+    this->wTime = 0;
 }
 
 // Destructor
